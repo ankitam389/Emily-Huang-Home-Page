@@ -1,8 +1,97 @@
-h1 {
-    /* background-color: red; */
+
+h1{
+    font-size: 4rem;
+    text-align: center;   
 }
 
-#large-name {
-    font-size: 3em;
+p {
+    font-size: 1.5rem;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+#current-page {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.head-section {
+    padding: 0%;
+}
+
+.main-section {
+    height: 100%;
+    background-color: rgb(208, 246, 161);
+    padding: 5%;
+}
+
+.icon h2{
+    display: inline-block;
+}
+
+.nav-socials {
+    display:flex;
+}
+
+.nav-socials a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-socials a:hover {
+    color:orange;
     
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px; 
+}
+
+.gallery-unit {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.gallery-unit img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+#drop-zone {
+    background-color: white;
+}
+
+
+.icon:active {
+    cursor: grabbing;
+}
+
+.icon:hover {
+    color: rgb(223, 97, 0);
+}
+
+.btn {
+    background-color: aquamarine;
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+#contact-main {
+    text-align: center;
+    padding: 10%;
 }
