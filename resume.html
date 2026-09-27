@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/resume.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/prof.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Resume</title>
 </head>
 <body>
@@ -31,6 +35,177 @@
         </div>
       </div>
     </header>
+
+    <section id="identity">
+    <div class="identity-inner">
+ 
+      <!-- Top layer: name, role, tagline -->
+      <div class="identity-heading">
+        <h1 class="name">Emily Huang</h1>
+        <p class="role-title">3D Character Artist</p>
+        <p class="tagline">Stylized and PBR character art for games, from sculpt to real-time render.</p>
+      </div>
+ 
+      <!-- Lower layer: summary paragraph -->
+      <div class="identity-summary">
+        <p>
+          3D Character Artist with experience across AAA and indie pipelines, including a Character Art
+          internship on Overwatch at Blizzard Entertainment and freelance character work on an unannounced
+          title. Specializes in high-to-low poly workflows, hand-painted and PBR texturing, retopology, and
+          real-time hair, with a background that also spans 2D and motion graphics animation.
+        </p>
+      </div>
+ 
+      <!-- Optional stat strip -->
+      <div class="identity-stats">
+        <div class="stat">
+          <span class="stat-value">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">4</span>
+          <span class="stat-label">Studios &amp; Teams</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">A</span>
+          <span class="stat-label">Rank, Rookie Awards 2024</span>
+        </div>
+      </div>
+ 
+      <!-- Optional photo -->
+      <div class="identity-photo">
+        <img src="" alt="Emily Huang">
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- =========================================
+       SECTION 2: WORK HISTORY (Stacked Cards)
+       ========================================= -->
+  <section id="work-history">
+    <div class="work-history-inner">
+ 
+      <!-- Repeatable card: one per role, reverse chronological -->
+      <article class="job-card">
+        <header class="job-card-header">
+          <h3 class="job-company">Blizzard Entertainment</h3>
+          <p class="job-title">Character Art Intern — Overwatch</p>
+          <p class="job-dates">May 2026 — August 2026</p>
+        </header>
+        <ul class="job-highlights">
+          <li>Created an AAA-quality weapon model, including high- and low-poly versions and implementation in a proprietary game engine.</li>
+          <li>Collaborated with tech artists and VFX artists to ensure a smooth handoff for rigging and special materials creation.</li>
+          <li>Hand-painted textures using proprietary tools in Photoshop, achieving style alignment with Overwatch.</li>
+        </ul>
+      </article>
+ 
+      <article class="job-card">
+        <header class="job-card-header">
+          <h3 class="job-company">Studiopoof LLC</h3>
+          <p class="job-title">Freelance 3D Character Artist — Unannounced Game</p>
+          <p class="job-dates">December 2023 — October 2024</p>
+        </header>
+        <ul class="job-highlights">
+          <li>Created high- and low-poly models of playable and NPC characters, promptly implementing feedback from the lead.</li>
+          <li>Retopologized and UV unwrapped characters following a 10–15k tri budget.</li>
+          <li>Communicated with the senior artist and game lead to define design rules and technical restrictions, ensuring alignment with the game's requirements.</li>
+          <li>Participated in collaborative feedback, providing paint-overs for sculpts to maintain a cohesive visual style.</li>
+        </ul>
+      </article>
+ 
+      <article class="job-card">
+        <header class="job-card-header">
+          <h3 class="job-company">Northeastern University</h3>
+          <p class="job-title">Motion Graphics Animator</p>
+          <p class="job-dates">January 2022 — May 2023</p>
+        </header>
+        <ul class="job-highlights">
+          <li>Developed animated graphics, typography, and GIFs for Northeastern's social media accounts and ad campaigns, driving 35K user interactions over time.</li>
+          <li>Independently led a full project lifecycle from requirement gathering and ideation through design iterations to final creation.</li>
+        </ul>
+      </article>
+ 
+      <!-- Optional collapsed entry for older/minor roles -->
+      <article class="job-card job-card--collapsed">
+        <header class="job-card-header">
+          <h3 class="job-company">For Traum Game Team</h3>
+          <p class="job-title">2D Animator (Volunteer)</p>
+          <p class="job-dates">July 2020 — September 2021</p>
+        </header>
+        <ul class="job-highlights">
+          <li>Worked with illustrators, game designers, and animators to produce a vertical slice for a 2.5D platforming, bullet-hell game on PC.</li>
+          <li>Animated 2D character movements for playable characters and enemies using frame-by-frame and Unity keyframing.</li>
+          <li>Participated in bi-weekly meetings to contribute to collaborative feedback and iterate on designs.</li>
+        </ul>
+      </article>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- =========================================
+       SECTION 3: SKILLS / TOOLS
+       ========================================= -->
+  <section id="skills">
+    <div class="skills-inner">
+ 
+      <div class="skill-category">
+        <h3 class="skill-category-label">Software</h3>
+        <ul class="skill-pills">
+          <li>Maya</li>
+          <li>Blender</li>
+          <li>ZBrush</li>
+          <li>Substance Painter</li>
+          <li>Marmoset Toolbag</li>
+          <li>Unreal Engine</li>
+          <li>3DCoat</li>
+          <li>Marvelous Designer</li>
+          <li>XGen</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+      </div>
+ 
+      <div class="skill-category">
+        <h3 class="skill-category-label">Core Skills</h3>
+        <ul class="skill-pills">
+          <li>3D Sculpting</li>
+          <li>Modeling</li>
+          <li>PBR Texturing</li>
+          <li>Hand-Painted Texturing</li>
+          <li>3D Animation</li>
+          <li>UV Unwrapping</li>
+          <li>Retopology</li>
+          <li>Real-Time Hair</li>
+          <li>Character Design</li>
+        </ul>
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- =========================================
+       SECTION 4: CONTACT
+       ========================================= -->
+  <section id="contact">
+    <div class="contact-inner">
+ 
+      <h2 class="contact-heading">Get in touch</h2>
+ 
+      <a class="contact-cta" href="mailto:emilyhuangart@gmail.com">emilyhuangart@gmail.com</a>
+ 
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/emily-huang-art/" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://h_wenxin.artstation.com" aria-label="ArtStation">ArtStation</a>
+      </div>
+ 
+    </div>
+  </section>
+ 
+</body>
     
 </body>
 </html>

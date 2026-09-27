@@ -1,0 +1,256 @@
+
+    /* ===== Tokens ===== */
+    :root {
+      --paper: #F5F2EA;
+      --ink: #241F1C;
+      --ink-soft: #55504A;
+      --studio: #2A2622;
+      --studio-text: #ECE6DB;
+      --studio-text-soft: #B9B2A6;
+      --rose: #B84C68;
+      --sage: #6E8259;
+      --line: #DDD5C4;
+      --line-dark: rgba(236, 230, 219, 0.16);
+ 
+      --font-display: 'Fraunces', serif;
+      --font-body: 'Inter', sans-serif;
+ 
+      --measure: 720px;
+      --space-section: 7rem;
+    }
+ 
+    @media (max-width: 640px) {
+      :root { --space-section: 4rem; }
+    }
+ 
+    /* ===== Reset ===== */
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: 500; }
+    p, ul { margin: 0; }
+    ul { padding: 0; list-style: none; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    img[src=""] { visibility: hidden; }
+ 
+    section > div {
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: var(--space-section) 1.5rem;
+    }
+ 
+    /* ===== Identity ===== */
+    #identity .identity-inner { text-align: center; padding-top: 8rem; }
+ 
+    .name {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .role-title {
+      margin-top: 0.5rem;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--rose);
+    }
+    .tagline {
+      margin-top: 1rem;
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+    }
+ 
+    .identity-summary {
+      margin-top: 2.5rem;
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      max-width: 62ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ 
+    .identity-stats {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1.5rem;
+      border-left: 1px solid var(--line);
+    }
+    .stat:first-child { border-left: none; }
+    .stat-value {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      color: var(--sage);
+    }
+    .stat-label {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+      max-width: 10ch;
+      text-align: center;
+    }
+ 
+    .identity-photo {
+      margin: 3rem auto 0;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .identity-photo img { width: 100%; height: 100%; object-fit: cover; }
+ 
+    /* ===== Work History ===== */
+    #work-history {
+      background: var(--studio);
+      color: var(--studio-text);
+    }
+    #work-history .work-history-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+ 
+    .job-card {
+      padding-left: 1.75rem;
+      border-left: 3px solid var(--rose);
+    }
+    .job-card:nth-child(even) { border-left-color: var(--sage); }
+    .job-card--collapsed {
+      opacity: 0.75;
+      border-left-color: var(--line-dark);
+    }
+ 
+    .job-card-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.4rem 0.75rem;
+      margin-bottom: 0.6rem;
+    }
+    .job-company {
+      font-size: 1.3rem;
+      color: var(--studio-text);
+    }
+    .job-title {
+      color: var(--studio-text-soft);
+      font-size: 0.95rem;
+    }
+    .job-dates {
+      margin-left: auto;
+      font-size: 0.85rem;
+      color: var(--studio-text-soft);
+      white-space: nowrap;
+    }
+ 
+    .job-highlights li {
+      position: relative;
+      padding-left: 1.1rem;
+      margin-top: 0.5rem;
+      color: var(--studio-text-soft);
+      font-size: 0.95rem;
+    }
+    .job-highlights li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--studio-text-soft);
+    }
+    .job-collapsed-note { color: var(--studio-text-soft); font-size: 0.95rem; }
+ 
+    @media (max-width: 640px) {
+      .job-dates { margin-left: 0; }
+    }
+ 
+    /* ===== Skills ===== */
+    #skills .skills-inner {
+      display: flex;
+      gap: 4rem;
+      flex-wrap: wrap;
+    }
+    .skill-category { flex: 1 1 220px; }
+    .skill-category-label {
+      font-size: 1.1rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skill-pills li {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink-soft);
+    }
+ 
+    /* ===== Contact ===== */
+    #contact .contact-inner {
+      text-align: center;
+      padding-top: var(--space-section);
+      padding-bottom: 8rem;
+    }
+    .contact-heading {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+    .contact-cta {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--rose);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    .contact-cta:hover { border-color: var(--rose); }
+ 
+    .contact-links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .contact-links a {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .contact-links a:hover { color: var(--sage); border-color: var(--sage); }
+ 
+    /* ===== Accessibility ===== */
+    a:focus-visible, .contact-cta:focus-visible {
+      outline: 2px solid var(--sage);
+      outline-offset: 3px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
