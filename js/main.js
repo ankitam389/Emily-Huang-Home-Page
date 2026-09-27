@@ -1,6 +1,8 @@
 console.log("HELLO");
 const target = document.getElementById("drop-zone");
 const mainContent = document.querySelector(".main-content");
+let currContent = document.querySelector("#programmer-container");
+const profile = document.querySelector("#profile-pic");
 
 // Cancel dragover so that drop can fire
 target.addEventListener("dragover", (ev) => {
@@ -12,24 +14,26 @@ target.addEventListener("drop", (ev) => {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text/plain");
   console.log("Dropping " + data + " inside of drag zone.")
+  currContent.style.display ="none";
 
 
   switch(data) {
     case "games":
-        target.style.background = "green";
-        mainContent.style.background = "green";
+        currContent = document.querySelector("#games-container");
+        profile.src = "./images/prof-games.png";
         break;
     case "animation":
-        target.style.background = "yellow";
-        mainContent.style.background = "yellow";
+        currContent = document.querySelector("#animation-container");
+        profile.src = "./images/prof-animate.png";
         break;
     case "programmer":
-        target.style.background = "pink";
-        mainContent.style.background = "pink";
+        currContent = document.querySelector("#programmer-container");
+        profile.src = "./images/prof-laptop.png";
         break;
     default:
         console.log("Data given is not an option: " + data);
   }
+  currContent.style.display ="block";
   
 });
 

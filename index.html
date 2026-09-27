@@ -26,16 +26,10 @@
             </div>
           <div class="col">
             <nav class="navbar">
-              <ul id="current-page">
-                About Me
-              </ul>
               <ul>
-                <a href="contact.html">
-                    Contact Me
-                </a>
-              </ul>
-              <ul>
-                Resume
+                <li id="current-page">About Me</li>
+                <li> <a href="contact.html">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
               </ul>
             </nav>
           </div>
@@ -48,69 +42,107 @@
       <div class="row">
         <div class="col-4">
           <div class="user">
-            
+            <h2>Click + drag a job to me!</h2>
             <div id="drop-zone" class="drop-zone">
-                    <img src="./images/prof.png" width="200" alt="hand-drawn image of a cartoon version of the author">
+                    <img id="profile-pic" src="./images/prof.png" width="200" alt="hand-drawn image of a cartoon version of the author">
             </div>
             <div id="games" class="icon" draggable="true" ondragstart="drag(event)">
-                <img src="./images/game.png" width="70" alt="icon of a video game controller for game development">
-                <h2>3D Game Artist</h2>
+                <h3><img src="./images/game.png" width="70" alt="icon of a video game controller for game development">3D Game Artist</h3>
             </div>
             <div id="animation" class="icon" draggable="true" ondragstart="drag(event)">
-                <img src="./images/animate.png" width="70" alt="icon of a drawing pen for digital animation">
-                <h2>Animator</h2>
+                <h3><img src="./images/animate.png" width="70" alt="icon of a drawing pen for digital animation">Animator</h3>
             </div>
             <div id="programmer" class="icon" draggable="true" ondragstart="drag(event)">
-                <img src="./images/program.png" width="70" alt="icon of a laptop for programming">
-                <h2>Programmer</h2>
+                <h3><img src="./images/program.png" width="70" alt="icon of a laptop for programming">Programmer</h3>
             </div>
-            <p>Prev: Character Art Intern @ Blizzard Entertainment</p>
-          </div>
-          <div class="user-info">
-            <p>
-              I'm Emily, a 3D character artist specializing in stylized, vibrant
-              characters for games! On the side, I also dabble in character
-              design and 2D animation.
-            </p>
+            
           </div>
           <div class="button-container">
             <hr />
             <div class="socials-containter">
               <nav class="nav-socials">
-               
                 <ul>
-                  <a href="https://www.linkedin.com/in/emily-huang-art/">linkedin</a>
-                </ul>
-                <ul>
-                  <a href="https://www.artstation.com/h_wenxin">artstation</a>
-                </ul>
-                <ul>
-                  <a href="https://github.com/huangew">github</a>
-                </ul>
-                <ul>
-                  <a href="https://x.com/wenxinart">twitter</a>
+                    <li><a href="https://www.linkedin.com/in/emily-huang-art/">linkedin</a></li>
+                    <li><a href="https://www.artstation.com/h_wenxin">artstation</a></li>
+                    <li><a href="https://github.com/huangew">github</a></li>
+                    <li><a href="https://x.com/wenxinart">twitter</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
         <div class="col-8">
-          <div class="container gallery main-content">
-            <div class="gallery-unit">
-                <img src="./images/meg.png" alt="3D render of a stylized female character in armor">
+          <div class="container main-content" id="games-container">
+            <h2>3D Game Artist</h2>
+            <p>Prev Roles: Character Art Intern @ Blizzard Entertainment | Character Artist @ Studiopoof</p>
+            <p>Skills:</p>
+            <ul>
+                <li>3D Modeling</li>
+                <li>3D Sculpting</li>
+                <li>Retopology</li>
+                <li>UV Unwrapping</li>
+                <li>PBR Texturing</li>
+                <li>Hand Painted Texturing</li>
+            </ul>
+            
+            <div class="gallery">
+                <div class="gallery-unit">
+                    <img src="./images/meg.png" alt="3D render of a stylized female character in armor">
+                </div>
+                <div class="gallery-unit">
+                    <img src="./images/hair.jpg" alt="3D render of a high bun hair style in a realistic style">
+                </div>
+                <div class="gallery-unit">
+                    <img src="./images/man.png" alt="3D render of a stylized portrait of a man smiling">
+                </div>
+                <div class="gallery-unit">
+                    <img src="./images/zyra.jpg" alt="3D render of a cartoon style girl standing on a large, red flower">
+                </div>
             </div>
-            <div class="gallery-unit">
-                <img src="./images/hair.jpg" alt="3D render of a high bun hair style in a realistic style">
-            </div>
-            <div class="gallery-unit">
-                <img src="./images/man.png" alt="3D render of a stylized portrait of a man smiling">
-            </div>
-            <div class="gallery-unit">
-                <img src="./images/zyra.jpg" alt="3D render of a cartoon style girl standing on a large, red flower">
-            </div>
-
           </div>
            
+          <div class="container main-content" id="animation-container">
+            <h2>Animator</h2>
+            <p>Prev Roles: Motion Graphics Animator | 3D Animator | 2D Pixel Animator</p>
+            <p></p>
+            <ul>
+                Skills:
+                <li>Motion graphics</li>
+                <li>Frame-by-frame 2D animation</li>
+                <li>3D animation</li>
+                <li>3D rigging</li>
+            </ul>
+            <ul>
+                Softwares:
+                <li>Adobe After Effects</li>
+                <li>Autodesk Maya</li>
+                <li>Adobe Illustrator</li>
+            </ul>
+            <div class="gallery">
+                <div class="gallery-square-unit">
+                    <img src="./gifs/ED2_Animation_V2_Sqaure.gif" alt="animated gif of a cartoon husky jumping">
+                </div>
+                <div class="gallery-square-unit">
+                    <img src="./gifs/Paws_Howling_Square.gif" alt="animated gif of a cartoon husky howling">
+                </div>
+                <div class="gallery-unit">
+                    <img src="./images/BabyPaws_Shot2_00213.png" alt="screenshot of animation with husky cheerleading">
+                </div>
+            </div>
+          </div>
+
+          <div class="container main-content" id="programmer-container">
+            <h2>Programmer</h2>
+            <p>Prev Roles: Research Assistant @ Northeastern Univeristy for Gamification of Algorithms</p>
+            <p>Languages: Java, C, HTML+CSS</p>
+            <ul>
+                Skills:
+                <li>Database Design</li>
+                <li>UI/UX</li>
+                <li>Frontend</li>
+            </ul>
+          </div>
+
           </div>
          
         </div>
@@ -121,7 +153,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <p>footer material</p>
+            <p>Emily Huang's Website</p>
           </div>
         </div>
       </div>

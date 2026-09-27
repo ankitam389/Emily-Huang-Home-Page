@@ -4,10 +4,17 @@ h1{
     text-align: center;   
 }
 
-p {
-    font-size: 1.5rem;
+p, ul{
+    font-size: 1.3rem;
 }
 
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap:5rem;
+    padding-top:2%;
+    
+}
 
 .navbar a {
     text-decoration: none;
@@ -20,13 +27,13 @@ p {
 }
 
 #current-page {
-    font-weight: bolder;
+    color:grey;
     text-decoration: underline;
     font-size: 1.5rem;
 }
 
-.head-section {
-    padding: 0%;
+.section {
+    padding: 1%;
 }
 
 .main-section {
@@ -39,8 +46,10 @@ p {
     display: inline-block;
 }
 
-.nav-socials {
+.nav-socials ul {
     display:flex;
+    list-style-type: none;
+    gap:1rem;
 }
 
 .nav-socials a {
@@ -65,14 +74,13 @@ p {
     overflow: hidden;
 }
 
-.gallery-unit img {
-    max-width: 100%;
-    height: auto;
-
+.gallery-square-unit {
+    aspect-ratio: 1 / 1;
 }
 
-#drop-zone {
-    background-color: white;
+.gallery-unit img, .gallery-square-unit img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -84,18 +92,15 @@ p {
     color: rgb(223, 97, 0);
 }
 
-.btn {
-    background-color: aquamarine;
-    font-weight: bold;
-    padding: 1%;
-    border-radius: 5%;
-}
-
 #contact-main {
     text-align: center;
     padding: 10%;
 }
 
-#contact-socials {
-   
+#animation-container {
+    display: none;
+}
+
+#games-container {
+    display: none;
 }
