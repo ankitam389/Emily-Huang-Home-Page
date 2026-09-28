@@ -3,8 +3,8 @@ const email = "emilyhuangart@gmail.com";
 
 //Listen for button click: Send emaili
 emailBtn.addEventListener("click", () => revealEmail());
-    console.log("email button clicked");
+console.log("email button clicked");
 
 function revealEmail() {
-    emailBtn.textContent = email;
+  emailBtn.textContent = email;
 }
