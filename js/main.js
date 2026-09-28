@@ -8,6 +8,16 @@ target.addEventListener("dragover", (ev) => {
   ev.preventDefault();
 });
 
+// Add event listeners to all icons for dragstart
+document.querySelectorAll(".icon").forEach((icon) => {
+  icon.addEventListener("dragstart", drag);
+});
+
+// Tracks the icon being dragged and sets the data to be transferred
+function drag(event) {
+  event.dataTransfer.setData("text", event.target.id);
+}
+
 //Drop icon onto target zone
 target.addEventListener("drop", (ev) => {
   ev.preventDefault();
