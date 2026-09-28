@@ -13,6 +13,12 @@ Deployed At:  https://huangew.github.io/Emily-Huang-Home-Page/
 
 Link To Youtube Demo: https://youtu.be/dGhLQeKSHbY   
 
+Installation Steps:   
+1. clone server  
+2. startup http server  
+    http-server  
+3. run server from link  
+
 GenAI Usage:  
 The page "Resume" or "Experimental" is created using Claude Sonnet 5. It was used to generate the HTML and CSS of the page based on a given pdf resume. It was guided to create a structural layout for the page first, before writing code.  
 
